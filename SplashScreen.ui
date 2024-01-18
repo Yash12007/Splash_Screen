@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>814</width>
-    <height>600</height>
+    <height>533</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,16 +17,17 @@
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>90</y>
-      <width>421</width>
-      <height>411</height>
+      <x>-1</x>
+      <y>-1</y>
+      <width>821</width>
+      <height>601</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background: black;
-colour: cyan;
-border-radius: 205px;</string>
+     <string notr="true">QFrame{
+	background:black;
+	color:white;
+}</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -34,104 +35,134 @@ border-radius: 205px;</string>
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="label">
+    <widget class="QProgressBar" name="progressBar">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>250</y>
-       <width>261</width>
-       <height>61</height>
+       <x>7</x>
+       <y>500</y>
+       <width>801</width>
+       <height>23</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background:black;
-color:cyan;
-font-size:60px;
-font-family:calibri;
-font:bold;</string>
+      <string notr="true">QProgressBar {
+	background-color: cyan;
+	color: #0a9dff;
+	border-style: outset;
+	border-width: 1px;
+	border-color: blue;
+	border-radius: 10%;
+	text-align: left; 
+}
+QProgressBar::chunk {
+	background-color: #af00ff;
+	border-radius:10%;
+}</string>
+     </property>
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>420</y>
+       <width>231</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	font-size:22px;
+	font-family:calibri;
+}</string>
      </property>
      <property name="text">
-      <string>Yash12007</string>
+      <string>Developed by Yash12007</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>310</y>
-       <width>211</width>
-       <height>41</height>
+       <x>20</x>
+       <y>460</y>
+       <width>241</width>
+       <height>16</height>
       </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color:white;
-font:bold;
-font-size:24px;
-font-family:calibri;</string>
      </property>
      <property name="text">
-      <string>Technology you need</string>
+      <string>© 2024 Yash12007. All Rights Reserved.</string>
      </property>
     </widget>
-    <widget class="QFrame" name="frame_2">
+    <widget class="QLabel" name="status">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>60</y>
-       <width>161</width>
-       <height>161</height>
+       <x>640</x>
+       <y>450</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Initializing...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Quit">
+     <property name="geometry">
+      <rect>
+       <x>772</x>
+       <y>0</y>
+       <width>41</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background:black;
+	border:none;
+	color:white;
+}</string>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>180</y>
+       <width>281</width>
+       <height>91</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background:cyan;
-border-radius:80px;</string>
+      <string notr="true">QLabel{
+	font-size:72px;
+	font-family:calibri;
+	color:cyan;
+}</string>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
+     <property name="text">
+      <string>Nexus OS</string>
      </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>260</y>
+       <width>201</width>
+       <height>16</height>
+      </rect>
      </property>
-     <widget class="QFrame" name="frame_3">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>141</width>
-        <height>141</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background:black;
-border-radius:70px;</string>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <widget class="QLabel" name="label_3">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>20</y>
-         <width>81</width>
-         <height>101</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color:cyan;
-background:black;
-font-size:150px;
-font:bold;
-font-family:calibri;</string>
-       </property>
-       <property name="text">
-        <string>Y</string>
-       </property>
-      </widget>
-     </widget>
+     <property name="text">
+      <string>An operating system for everyone.</string>
+     </property>
     </widget>
    </widget>
   </widget>
